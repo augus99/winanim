@@ -43,6 +43,12 @@ namespace Winanim {
                 this.AnimateHorizontal(1000, WindowAnimatorMode.Show);
             });
 
+            // Vertical
+            this.AddButton("Vertical in/out", () => {
+                this.AnimateVertical(1000, WindowAnimatorMode.Hide);
+                this.AnimateVertical(1000, WindowAnimatorMode.Show);
+            });
+
             this.ResumeLayout(false);
         }
 
