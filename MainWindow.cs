@@ -18,6 +18,18 @@ namespace Winanim {
             this.Name = "AnimateWindowForm";
             this.Text = "Animated Window";
 
+            // Title
+            this.Controls.Add(new Label() {
+                Dock = DockStyle.Top,
+                Font = new Font("Segoe UI", 13.25f),
+                Location = new Point(0, 0),
+                Size = new Size(this.Width, 99),
+                Text = "Winanim",
+                TabIndex = 5,
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.White
+            });
+
             this.ResumeLayout(false);
         }
     }
