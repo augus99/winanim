@@ -49,6 +49,12 @@ namespace Winanim {
                 this.AnimateVertical(1000, WindowAnimatorMode.Show);
             });
 
+            // Center
+            this.AddButton("Center in/out", () => {
+                this.AnimateCenter(1000, WindowAnimatorMode.Hide);
+                this.AnimateCenter(1000, WindowAnimatorMode.Show);
+            });
+
             this.ResumeLayout(false);
         }
 
