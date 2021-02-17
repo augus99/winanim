@@ -55,6 +55,11 @@ namespace Winanim {
                 this.AnimateCenter(1000, WindowAnimatorMode.Show);
             });
 
+            // Exit
+            this.AddButton("Exit", () => {
+                Application.Exit();
+            });
+
             this.ResumeLayout(false);
         }
 
