@@ -12,3 +12,17 @@
 
 ## Description
 Basic windows forms app animations using p/invoke.
+
+## Build
+To build the project you will need dotnet installed on your computer, then type the following lines on your preferred terminal
+```console
+augus99@home:~/Desktop $ git clone https://github.com/augus99/winanim.git
+augus99@home:~/Desktop $ cd winanim
+augus99@home:~/Desktop/winanim $ dotnet build
+```
+
+## Run
+To run this project simply run this command
+```console
+augus99@home:~/Desktop/winanim $ dotnet run
+```
