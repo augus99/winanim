@@ -15,8 +15,8 @@ namespace Winanim {
             this.ClientSize = new Size(287, 405);
             this.FormBorderStyle = FormBorderStyle.None;
             this.BackColor = Color.FromArgb(31, 31, 31);
-            this.Name = "AnimateWindowForm";
-            this.Text = "Animated Window";
+            this.Name = "Winanim";
+            this.Text = "Winanim";
 
             // Title
             this.Controls.Add(new Label() {
