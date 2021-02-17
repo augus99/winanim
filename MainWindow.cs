@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Winanim {
@@ -30,7 +31,35 @@ namespace Winanim {
                 ForeColor = Color.White
             });
 
+            // Blend
+            this.AddButton("Blend in/out", () => {
+                this.AnimateBlend(1000, WindowAnimatorMode.Hide);
+                this.AnimateBlend(1000, WindowAnimatorMode.Show);
+            });
+
             this.ResumeLayout(false);
+        }
+
+        private void AddButton(string text, Action callback) {
+            this.ClientSize = new Size(this.ClientSize.Width, this.ClientSize.Height + 40);
+            
+            Button btn = new Button() {
+                Text = text,
+                Location = new Point(40, this.ClientSize.Height - 80),
+                Size = new Size(this.Width - 80, 30),
+                BackColor = Color.FromArgb(31, 31, 255),
+                FlatStyle = FlatStyle.Flat,
+                ForeColor = Color.White,
+                UseVisualStyleBackColor = true,
+                FlatAppearance = { BorderSize = 0 },
+                Cursor = Cursors.Hand
+            };
+
+            btn.Click += (sender, args) => {
+                callback();
+            };
+
+            this.Controls.Add(btn);
         }
     }
 }
