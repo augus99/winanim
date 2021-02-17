@@ -37,6 +37,12 @@ namespace Winanim {
                 this.AnimateBlend(1000, WindowAnimatorMode.Show);
             });
 
+            // Horizontal
+            this.AddButton("Horizontal in/out", () => {
+                this.AnimateHorizontal(1000, WindowAnimatorMode.Hide);
+                this.AnimateHorizontal(1000, WindowAnimatorMode.Show);
+            });
+
             this.ResumeLayout(false);
         }
 
