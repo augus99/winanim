@@ -12,7 +12,7 @@ namespace Winanim {
             // Setup form
             this.AutoScaleDimensions = new SizeF(6F, 13F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(287, 405);
+            this.ClientSize = new Size(287, 139);
             this.FormBorderStyle = FormBorderStyle.None;
             this.BackColor = Color.FromArgb(31, 31, 31);
             this.Name = "Winanim";
